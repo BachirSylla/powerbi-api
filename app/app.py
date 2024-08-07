@@ -81,4 +81,5 @@ def get_data():
     return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Utiliser la variable d'environnement PORT ou le port 5000 par défaut
+    app.run(host='0.0.0.0', port=port)
