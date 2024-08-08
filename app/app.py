@@ -9,7 +9,7 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 # Chemin vers le certificat .p12
-p12_cert_path = 'D:/get-project-entree/powerBI/app/application_de_test.p12'
+p12_cert_path = 'app/application_de_test.p12'
 p12_password = 'password'  # Remplacez par le mot de passe réel du certificat
 
 def get_api_data(start_date, end_date, app_name, operation):
