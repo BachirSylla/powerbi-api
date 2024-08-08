@@ -79,6 +79,11 @@ def get_data():
 
     data = get_api_data(start_date, end_date, app_name, operation)
     return jsonify(data)
+@app.route('/')
+def home():
+    return "API is up and running!"
+   
+    
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # Utiliser la variable d'environnement PORT ou le port 5000 par défaut
